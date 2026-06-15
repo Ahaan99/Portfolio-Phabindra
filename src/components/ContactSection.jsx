@@ -93,11 +93,12 @@ export default function ContactSection() {
           <div className="w-44 h-44 sm:w-48 sm:h-48 relative flex items-center justify-center">
             <div className="absolute inset-0 bg-brand-orange/10 blur-[40px] rounded-full" />
             <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-tr from-brand-orange to-blue-500 rounded-full p-1 shadow-lg z-10 overflow-hidden">
-              <div className="w-full h-full bg-card-bg rounded-full overflow-hidden flex items-center justify-center relative">
+              <div className="w-full h-full bg-transparent rounded-full overflow-hidden flex items-center justify-center relative">
                 <img 
                   src={userProfile} 
                   alt="Contact Phabindra" 
-                  className="w-full h-full object-cover object-center scale-105"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: '50% 10%' }}
                 />
               </div>
             </div>
@@ -262,9 +263,7 @@ export default function ContactSection() {
         </div>
 
         <div className="flex items-center gap-1">
-          <span>&copy; {new Date().getFullYear()} Made with</span>
-          <Heart size={9} className="text-red-500 fill-red-500 animate-pulse" />
-          <span>by Me</span>
+          <span>&copy; {new Date().getFullYear()} Phabindra Kumar Sah</span>
         </div>
       </div>
     </motion.section>

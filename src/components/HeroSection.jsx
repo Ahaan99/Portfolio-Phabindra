@@ -225,11 +225,12 @@ export default function HeroSection({ isDark, onToggleTheme }) {
               whileHover={{ scale: 1.04, rotate: 1 }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
             >
-              <div className="w-full h-full bg-card-bg rounded-full overflow-hidden flex items-center justify-center relative">
+              <div className="w-full h-full bg-transparent rounded-full overflow-hidden flex items-center justify-center relative">
                 <img 
                   src={userProfile} 
                   alt="Phabindra Kumar Sah" 
-                  className="w-full h-full object-cover object-center scale-105"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: '50% 10%' }}
                 />
               </div>
             </motion.div>

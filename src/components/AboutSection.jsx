@@ -40,11 +40,12 @@ export default function AboutSection() {
           
           {/* User profile image container with glow */}
           <div className="w-32 h-32 sm:w-40 sm:h-40 bg-gradient-to-tr from-brand-orange-light to-brand-orange rounded-full p-1 shadow-[0_10px_35px_rgba(255,123,2,0.2)] z-10 overflow-hidden">
-            <div className="w-full h-full bg-card-bg rounded-full overflow-hidden flex items-center justify-center relative">
+            <div className="w-full h-full bg-transparent rounded-full overflow-hidden flex items-center justify-center relative">
               <img 
                 src={userProfile} 
                 alt="About Phabindra" 
-                className="w-full h-full object-cover object-center scale-105"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: '50% 10%' }}
               />
             </div>
           </div>
